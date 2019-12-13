@@ -15,11 +15,11 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-        width: 90%;
+       @media @phone{
+      width: 90%;
         margin: 0 5%;
+       }
       }
-    }
-    .sky, .launch{
     }
 
     p {
@@ -62,9 +62,17 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @phone{
+      flex-direction: column-reverse;
+      margin-top: 15px;
+      padding: 15px 5%;
+    }
     .walk-text {
       width: 50%;
+      @media @phone{
+        width: 100%
+        margin-top 15px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -73,10 +81,6 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
-    }
 
     .walk-img {
       width: 46%;
@@ -87,4 +91,14 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+        .btn {
+          .mixin-btn(@header-font-color, white);
+          @media @phone {
+            width: 100%;
+            padding: 20px 0;
+            }
+          }
+        }
       }
+    }
+  }

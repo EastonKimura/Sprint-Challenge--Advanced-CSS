@@ -15,4 +15,11 @@ text-align: center;
 }
 &:hover{
     border: 1px solid white;
+    background: @font-clr;
+    color: @bgd-clr;
+}
+.mixin(){
+    @media @phone {
+        displays: none;
+    }
 }
